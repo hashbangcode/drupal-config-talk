@@ -1,0 +1,178 @@
+{
+  "new slide": {
+    "prefix": "slide",
+    "body": ["## ${TM_SELECTED_TEXT:$1}", "", "$2", "", "---"],
+    "description": "create a new slide"
+  },
+  "template": {
+    "prefix": "template",
+    "body": [
+      "---",
+      "marp: true",
+      "theme: codecafe",
+      "# class: invert",
+      "footer: by [](https://code-cafe.nl)",
+      "---",
+      "",
+      "# ${TM_FILENAME_BASE}",
+      "",
+      "<!-- paginate: true -->",
+      "",
+      "---",
+      "",
+      "## ${1:slide1}",
+      "",
+      "$3",
+      "",
+      "---",
+      "",
+      "## Vragen?",
+      "",
+      "- E-mail mij op ${2:noah.beij@code-cafe.nl}",
+      "- Join de CodeCafé-community op Discord!",
+      "",
+      "![bg right 80%](https://assets.nbeij.nl/marp/assets/codecafe.png)",
+      "",
+      "---"
+    ],
+    "description": "Create starter template"
+  },
+  "mark": {
+    "prefix": "mark",
+    "body": [
+      "<mark class='${1|info,warning,error,success,question|}'>",
+      "${2:content}",
+      "</mark>"
+    ],
+    "description": "Create a mark"
+  },
+  "columns": {
+    "prefix": "cols",
+    "body": [
+      "<div class='columns'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create 2 columns"
+  },
+  "columns 3": {
+    "prefix": "cols3",
+    "body": [
+      "<div class='columns-3'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "  <div>",
+      "${3:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create 3 columns"
+  },
+  "auto columns": {
+    "prefix": "autocols",
+    "body": [
+      "<div class='auto'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create auto columns"
+  },
+  "rows": {
+    "prefix": "rows",
+    "body": [
+      "<div class='rows'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create 2 rows"
+  },
+  "rows 3": {
+    "prefix": "rows3",
+    "body": [
+      "<div class='rows-3'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "  <div>",
+      "${3:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create 3 rows"
+  },
+  "auto rows": {
+    "prefix": "autorows",
+    "body": [
+      "<div class='rows-auto'>",
+      "  <div>",
+      "${1:content}",
+      "  </div>",
+      "  <div>",
+      "${2:content}",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "Create auto rows"
+  },
+  "challenge": {
+    "prefix": "challenge",
+    "body": [
+      "<div class='challenge'>",
+      "${1:<b>content</b>}",
+      "<hr/>",
+      "${2:content}",
+      "</div>"
+    ],
+    "description": "Create a challenge"
+  },
+  "keyboard key": {
+    "prefix": "kbd",
+    "body": ["<kbd>${TM_SELECTED_TEXT:${1:F}}</kbd>"],
+    "description": "Create a keyboard key"
+  },
+  "table": {
+    "prefix": "table",
+    "body": [
+      "| ${1:header} | ${2:header} |",
+      "| --- | --- |",
+      "| ${3:content} | ${4:content} |",
+      "| ${5:content} | ${6:content} |"
+    ],
+    "description": "Create a table"
+  },
+  "table colored": {
+    "prefix": "tablecolored",
+    "body": [
+      "<div class='${1|tableBlue,tableGreen|}'>",
+      "",
+      "| ${2:header} | ${3:header} |",
+      "| --- | --- |",
+      "| ${4:content} | ${5:content} |",
+      "| ${6:content} | ${7:content} |",
+      "</div>"
+    ],
+    "description": "Create a green table"
+  }
+}
